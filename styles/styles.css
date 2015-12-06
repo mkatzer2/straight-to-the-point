@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+   padding: 0;
+}
+
+.header {  
+  padding:1em 0;
+}
+	
+.col { background: #ccc; text-align:center;}
+
+header img {
+    width: 150px;
+    height: 150px;   
+}
+
+article ul li img { 
+    max-width: 400px;
+    max-height: 133px;  
+  }
+
+footer {  
+ clear: both;
+ margin: 0;  
+}
+
+/*
+[class*='col-'] {
+  float: left;
+}
+ 
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
