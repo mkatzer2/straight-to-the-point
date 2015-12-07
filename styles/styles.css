@@ -1,23 +1,20 @@
-
 * {  margin: 0; padding: 0; }
  
-html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
+html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";
+ background: -prefix-linear-gradient(top, orange, red); 
+  background: linear-gradient(to bottom, orange, red);
+}
 
 .header {  
   padding:1em 0; 
   text-align: center;
   min-width: 98%; 
-  font: small-caps bold 150% "PT Sans"; 
-}
+  font: small-caps bold 150% "PT Sans"; }
 	
 .col, .descrip { background-color: white; text-align: center;}
 
-
  /*  SECTIONS  */
-.section {
-	padding: 0px;
-	margin: 0px;
-}
+.section {	padding: 0px; margin: 0px; }
 
 /*  COLUMN SETUP  */
 .col {
@@ -83,51 +80,27 @@ article img {
 
 }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* here's a cool wood-like background I found...not sure why it extends so far past the footer thought */  
-
-html:after {
-    background-image:
-    -webkit-linear-gradient(45deg, rgba(0,0,0,0.0125) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.0125) 75%, rgba(0,0,0,0.0125)),
-    -webkit-linear-gradient(45deg, rgba(0,0,0,0.0125) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.0125) 75%, rgba(0,0,0,0.0125));
+{
   
-    -webkit-background-size: 2px 2px;
-
-    background-position: 0 0, 1px 1px;
-    display: block;
-    content: "";
-    height: 100%;
-    width: 100%;
-    z-index:5;
-    position: absolute;
+  
 }
 
-/* Wood Base Gradient */
-body {
-    background-image: -webkit-radial-gradient(#D1A46B,#B57744);
 
-    -webkit-background-size: 100%;
 
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
