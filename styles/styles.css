@@ -1,36 +1,133 @@
-* {
-  margin: 0;
-   padding: 0;
-}
+
+* {  margin: 0; padding: 0; }
+ 
+html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
 
 .header {  
-  padding:1em 0;
+  padding:1em 0; 
+  text-align: center;
+  min-width: 98%; 
+  font: small-caps bold 150% "PT Sans"; 
 }
 	
-.col { background: #ccc; text-align:center;}
+.col, .descrip { background-color: white; text-align: center;}
+
+
+ /*  SECTIONS  */
+.section {
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+
+*/
+
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
 
 header img {
     width: 150px;
     height: 150px;   
 }
+ 
+.main, .mosaic, .descrip {
+  clear: both;
+  margin: 0 auto;
+  text-align: left;
+}
 
-article ul li img { 
+article img {  
     max-width: 400px;
     max-height: 133px;  
   }
+ 
+.descrip {
+  font: small-caps 150% "Vollkorn";
 
-footer {  
- clear: both;
- margin: 0;  
-}
-
-/*
-[class*='col-'] {
-  float: left;
 }
  
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* here's a cool wood-like background I found...not sure why it extends so far past the footer thought */  
+
+html:after {
+    background-image:
+    -webkit-linear-gradient(45deg, rgba(0,0,0,0.0125) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.0125) 75%, rgba(0,0,0,0.0125)),
+    -webkit-linear-gradient(45deg, rgba(0,0,0,0.0125) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.0125) 75%, rgba(0,0,0,0.0125));
+  
+    -webkit-background-size: 2px 2px;
+
+    background-position: 0 0, 1px 1px;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index:5;
+    position: absolute;
+}
+
+/* Wood Base Gradient */
+body {
+    background-image: -webkit-radial-gradient(#D1A46B,#B57744);
+
+    -webkit-background-size: 100%;
+
 } 
