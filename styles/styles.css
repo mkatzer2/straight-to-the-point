@@ -129,18 +129,39 @@ aside li {
 
 aside { 
 padding-bottom: 30%;
+padding-top: 2%;
 }
 
+article {
+text-align: left;
+padding: 2% 20% 5% 5%;
+}
 
+.class-list li {
+  padding:1% 1% 1% 0;
+  margin: 5% 0;
+}
 
+.lesson-list li {
+  padding:1% 1% 1% 0;
+  margin: 2% 0;
+}
 
+.class-list li:first-child, .lesson-list li:first-child {
+  margin-top: 0;
+}
 
+article nav {
+  padding:0 1% 5% 0;
+}
 
+article nav h3 {
+  margin-top: 3%
+}
 
-
-
-
-
+h3 { 
+  font-size: 1.2rem;
+}
 
 
 
