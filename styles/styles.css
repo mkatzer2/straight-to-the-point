@@ -1,0 +1,106 @@
+* {  margin: 0; padding: 0; }
+ 
+html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";
+ background: -prefix-linear-gradient(top, orange, red); 
+  background: linear-gradient(to bottom, orange, red);
+}
+
+.header {  
+  padding:1em 0; 
+  text-align: center;
+  min-width: 98%; 
+  font: small-caps bold 150% "PT Sans"; }
+	
+.col, .descrip { background-color: white; text-align: center;}
+
+ /*  SECTIONS  */
+.section {	padding: 0px; margin: 0px; }
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+
+*/
+
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+header img {
+    width: 150px;
+    height: 150px;   
+}
+ 
+.main, .mosaic, .descrip {
+  clear: both;
+  margin: 0 auto;
+  text-align: left;
+}
+
+article img {  
+    max-width: 400px;
+    max-height: 133px;  
+  }
+ 
+.descrip {
+  font: small-caps 150% "Vollkorn";
+
+}
+ 
+{
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
