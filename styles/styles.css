@@ -114,6 +114,8 @@ h1 {
 
 .title { 
   margin-top: 3%;
+  margin-left: 20%;
+  width: auto;
 }
 
 aside a {
@@ -160,10 +162,14 @@ article nav h3 {
 }
 
 h3 { 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-
+.class-name { 
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1%;
+}
 
 
 
