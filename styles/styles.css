@@ -1,8 +1,8 @@
 * {  margin: 0; padding: 0; }
  
 html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";
- background: -prefix-linear-gradient(top, orange, red); 
-  background: linear-gradient(to bottom, orange, red);
+ background: -prefix-linear-gradient(top, #61A300, #579300); 
+  background: linear-gradient(to bottom, #61A300, #579300);
 }
 
 .header {  
@@ -79,14 +79,57 @@ article img {
   font: small-caps 150% "Vollkorn";
 
 }
- 
-{
-  
-  
+/* monica's new stuff */
+header li {
+  display: inline;
+  float: left;
+  padding: 1%;
+  margin: 0 1%;
 }
 
+header {
+  background-color: white;
+}
 
+header a {
+  color: #523E33;
+}
+.nav-color { background-color:#CAC3BF; }
 
+.no-under-link {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 2.5rem;
+}
+
+.fancy { 
+  font-family: Oswald, sans-serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #C6E09E;
+}
+
+.title { 
+  margin-top: 3%;
+}
+
+aside a {
+  color: #523E33;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+aside li {
+  padding: 3% 0;
+  margin-top: 4%;
+}
+
+aside { 
+padding-bottom: 30%;
+}
 
 
 
