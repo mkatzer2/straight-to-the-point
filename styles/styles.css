@@ -3,15 +3,12 @@
 <<<<<<< HEAD
 html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
 =======
-html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";
- background: -prefix-linear-gradient(top, #61A300, #579300); 
-  background: linear-gradient(to bottom, #61A300, #579300);
-}
+html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
 >>>>>>> gh-pages
 
 
 body {
-    line-height: 1;
+    line-height: 1; 
 }
   
 a {
@@ -34,6 +31,10 @@ header nav ul li {
 }
 	
 .col, .descrip { background-color: white; text-align: center;}
+
+.span_3_of_11 { 
+ outline: 1px solid #579300; 
+}
 
  /*  SECTIONS  */
 .section {	padding: 0px; margin: 0px; }
@@ -59,6 +60,19 @@ header nav ul li {
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
+.push {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 480px)
+{
+		
+	.push {
+	    display: none;
+	}
+	
+} 
+
 header img {
     width: 150px;
     height: 150px;   
@@ -77,6 +91,22 @@ article img {
 .descrip {
   font: small-caps 150% "Vollkorn";
 }
+ 
+.footer-descrip {
+  text-align: center;
+  min-width: 98%; 
+  font: small-caps 85% "Lato";
+  padding: 2px;
+  border-width: 3px;
+  border-style: double; 
+  border-color: #579300 #60A300;
+  margin-bottom: 25px;
+}
+
+.map {
+  
+}
+
 <<<<<<< HEAD
   
 =======
@@ -178,14 +208,6 @@ h3 {
   margin-right: 3%;
 }
 
-<<<<<<< HEAD
-body {
-    background-image: radial-gradient(center bottom, ellipse cover, #60A300, #579300);
-    background-image: -o-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
-    background-image: -ms-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
-    background-image: -moz-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
-    background-image: -webkit-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
-}
 =======
 .about-article p {
   width: auto;
@@ -198,7 +220,7 @@ body {
   font-size: 2.5rem;
 }
 .about-article {
-  padding-bottom: 20%;
+  padding-bottom: 3%;
 >>>>>>> gh-pages
 } 
 
