@@ -9,11 +9,29 @@ html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatfa
 }
 >>>>>>> gh-pages
 
-.header {  
-  padding:1em 0; 
-  text-align: center;
+
+body {
+    line-height: 1;
+}
+  
+a {
+ text-decoration: none; 
+}
+
+header {    
+  padding:10px 0;  
   min-width: 98%; 
-  font: small-caps bold 150% "Ariel"; }
+  font: small-caps bold 150% "Lato";  
+}
+
+header nav ul li { 
+  float: left;
+  min-width: 19.6%;
+  max-width: 19.6%;
+  font-size: 1rem;  
+  line-height: 2rem;  
+  padding: 0; 
+}
 	
 .col, .descrip { background-color: white; text-align: center;}
 
@@ -53,8 +71,7 @@ header img {
 }
 
 article img {  
-    max-width: 400px;
-    max-height: 133px;  
+    max-width: 480px; 
   }
  
 .descrip {
@@ -168,6 +185,7 @@ body {
     background-image: -ms-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
     background-image: -moz-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
     background-image: -webkit-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
+}
 =======
 .about-article p {
   width: auto;
@@ -182,6 +200,66 @@ body {
 .about-article {
   padding-bottom: 20%;
 >>>>>>> gh-pages
+} 
+
+
+/*slideshow styles - taken from open source online examples - not created organically by charles or monica*/
+ 
+
+.slider{
+	width: 480px; /*Same as width of the large image*/
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 320px; /*That helps bring the labels down*/
+	
+	margin: 15px auto;
+	
+	/*Lets add a shadow*/
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
- 
+
+/*added transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*spacing for the thumbnails*/
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+} 
