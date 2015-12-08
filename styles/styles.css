@@ -1,56 +1,57 @@
 * {  margin: 0; padding: 0; }
  
-html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";
- background: -prefix-linear-gradient(top, #61A300, #579300); 
-  background: linear-gradient(to bottom, #61A300, #579300);
+<<<<<<< HEAD
+html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
+=======
+html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
+>>>>>>> gh-pages
+
+
+body {
+    line-height: 1; 
+}
+  
+a {
+ text-decoration: none; 
 }
 
-.header {  
-  padding:1em 0; 
-  text-align: center;
+header {    
+  padding:10px 0;  
   min-width: 98%; 
-  font: small-caps bold 150% "PT Sans"; }
+  font: small-caps bold 150% "Lato";  
+}
+
+header nav ul li { 
+  float: left;
+  min-width: 19.6%;
+  max-width: 19.6%;
+  font-size: 1rem;  
+  line-height: 2rem;  
+  padding: 0; 
+}
 	
 .col, .descrip { background-color: white; text-align: center;}
+
+.span_3_of_11 { 
+ outline: 1px solid #579300; 
+}
 
  /*  SECTIONS  */
 .section {	padding: 0px; margin: 0px; }
 
 /*  COLUMN SETUP  */
-.col {
-	display: block;
+.col {	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
+	margin: 1% 0 1% 1.6%; }
 
+.col:first-child { margin-left: 0; } 
 
-/*  GROUPING  
-.group:before,
-.group:after {
-	content:"";
-	display:table;
-}
-.group:after {
-	clear:both;
-}
-
-*/
-
-.group {
-    zoom:1; /* For IE 6/7 */
-}
+.group { zoom:1; /* For IE 6/7 */ }
 
 /*  GRID OF THREE  */
-.span_3_of_3 {
-	width: 100%;
-}
-.span_2_of_3 {
-	width: 66.1%;
-}
-.span_1_of_3 {
-	width: 32.2%;
-}
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.1%; }
+.span_1_of_3 { width: 32.2%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
@@ -58,6 +59,19 @@ html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatfa
 	.col { margin: 1% 0 1% 0%;}
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
+
+.push {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 480px)
+{
+		
+	.push {
+	    display: none;
+	}
+	
+} 
 
 header img {
     width: 150px;
@@ -71,14 +85,31 @@ header img {
 }
 
 article img {  
-    max-width: 400px;
-    max-height: 133px;  
+    max-width: 480px; 
   }
  
 .descrip {
   font: small-caps 150% "Vollkorn";
-
 }
+ 
+.footer-descrip {
+  text-align: center;
+  min-width: 98%; 
+  font: small-caps 85% "Lato";
+  padding: 2px;
+  border-width: 3px;
+  border-style: double; 
+  border-color: #579300 #60A300;
+  margin-bottom: 25px;
+}
+
+.map {
+  
+}
+
+<<<<<<< HEAD
+  
+=======
 /* monica's new stuff */
 header li {
   display: inline;
@@ -138,6 +169,7 @@ article {
 text-align: left;
 padding: 2% 20% 5% 5%;
 }
+>>>>>>> gh-pages
 
 .class-list li {
   padding:1% 1% 1% 0;
@@ -176,6 +208,7 @@ h3 {
   margin-right: 3%;
 }
 
+=======
 .about-article p {
   width: auto;
   font-size: 1.2rem;
@@ -187,7 +220,68 @@ h3 {
   font-size: 2.5rem;
 }
 .about-article {
-  padding-bottom: 20%;
+  padding-bottom: 3%;
+>>>>>>> gh-pages
+} 
+
+
+/*slideshow styles - taken from open source online examples - not created organically by charles or monica*/
+ 
+
+.slider{
+	width: 480px; /*Same as width of the large image*/
+	position: relative;
+	/*Instead of height we will use padding*/
+	padding-top: 320px; /*That helps bring the labels down*/
+	
+	margin: 15px auto;
+	
+	/*Lets add a shadow*/
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
- 
+
+/*added transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*spacing for the thumbnails*/
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+} 
