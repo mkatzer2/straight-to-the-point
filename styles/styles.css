@@ -1,15 +1,12 @@
 * {  margin: 0; padding: 0; }
  
-html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";
- background: -prefix-linear-gradient(top, orange, red); 
-  background: linear-gradient(to bottom, orange, red);
-}
+html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
 
 .header {  
   padding:1em 0; 
   text-align: center;
   min-width: 98%; 
-  font: small-caps bold 150% "PT Sans"; }
+  font: small-caps bold 150% "Ariel"; }
 	
 .col, .descrip { background-color: white; text-align: center;}
 
@@ -17,40 +14,18 @@ html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatfa
 .section {	padding: 0px; margin: 0px; }
 
 /*  COLUMN SETUP  */
-.col {
-	display: block;
+.col {	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
+	margin: 1% 0 1% 1.6%; }
 
+.col:first-child { margin-left: 0; } 
 
-/*  GROUPING  
-.group:before,
-.group:after {
-	content:"";
-	display:table;
-}
-.group:after {
-	clear:both;
-}
-
-*/
-
-.group {
-    zoom:1; /* For IE 6/7 */
-}
+.group { zoom:1; /* For IE 6/7 */ }
 
 /*  GRID OF THREE  */
-.span_3_of_3 {
-	width: 100%;
-}
-.span_2_of_3 {
-	width: 66.1%;
-}
-.span_1_of_3 {
-	width: 32.2%;
-}
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.1%; }
+.span_1_of_3 { width: 32.2%; }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
@@ -77,30 +52,23 @@ article img {
  
 .descrip {
   font: small-caps 150% "Vollkorn";
-
 }
- 
-{
   
-  
+
+
+
+
+
+
+
+
+
+body {
+    background-image: radial-gradient(center bottom, ellipse cover, #60A300, #579300);
+    background-image: -o-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
+    background-image: -ms-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
+    background-image: -moz-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
+    background-image: -webkit-radial-gradient(center bottom, ellipse cover, #60A300, #579300);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  
