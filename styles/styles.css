@@ -213,15 +213,19 @@ h3 {
 
 .about-article img {
   float: left;
-  margin-right: 3%;
+  margin-left: 10%;
+  margin-bottom: 3%;
 }
  
 .about-article p {
+  clear: both;
   width: auto;
   font-size: 1.2rem;
+  margin: 3%;
+  margin-left: 12%;
 }
 .about-article h2 { 
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   margin-top: 5%;
   text-align: center;
   font-size: 2.5rem;
