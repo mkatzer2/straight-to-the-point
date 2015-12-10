@@ -21,14 +21,19 @@ footer {
   font: small-caps bold 150% "Lato";  
 }
 
-header nav ul li { 
+header li { 
   float: left;
   min-width: 19.6%;
   max-width: 19.6%;
   font-size: 1rem;  
   line-height: 2rem;  
-  padding: 0; 
+  padding: 1% 0; 
 }
+
+header li:hover {
+  background-color: rgb(207, 207, 207);
+}
+
 	
 .col, .descrip { background-color: white; text-align: center;}
 
@@ -122,15 +127,6 @@ article img {
   min-height: 30%
 }
 
-=======
-/* monica's new stuff */
-header li {
-  display: inline;
-  float: left;
-  padding: 1%;
-  margin: 0 1%;
-}
-
 header {
   background-color: white;
 }
@@ -217,15 +213,19 @@ h3 {
 
 .about-article img {
   float: left;
-  margin-right: 3%;
+  margin-left: 10%;
+  margin-bottom: 3%;
 }
  
 .about-article p {
+  clear: both;
   width: auto;
   font-size: 1.2rem;
+  margin: 3%;
+  margin-left: 12%;
 }
 .about-article h2 { 
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   margin-top: 5%;
   text-align: center;
   font-size: 2.5rem;
@@ -301,7 +301,7 @@ h3 {
 }
 
 body {
- max-width: 90%;
+  max-width: 90%;
   margin-left: 10%;
   margin-right: 10%; 
   background: -prefix-linear-gradient(top, white, #579300); 
@@ -312,4 +312,16 @@ body {
 background-color:#FFF;
 background-image: url(your_BG.jpg);
 }
- 
+
+.social p {
+  padding-bottom: 10%;
+  padding-top: 15%;
+}
+
+.social li {
+  display: inline;
+}
+
+aside li:hover {
+  background-color: rgb(207, 207, 207);
+}
