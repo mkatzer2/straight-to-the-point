@@ -1,16 +1,12 @@
 * {  margin: 0; padding: 0; }
  
-<<<<<<< HEAD
 html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
-=======
-html {	display:block; font-family: "Vollkorn", "Open Sans", "Lato", "Abril Fatface", "Old Standard TT", "Droid Sans";}
->>>>>>> gh-pages
-
 
 body {
-    line-height: 1; 
+  line-height: 1; 
+  overflow-x: hidden;
 }
-  
+
 a {
  text-decoration: none; 
 }
@@ -18,6 +14,10 @@ a {
 header {    
   padding:10px 0;  
   min-width: 98%; 
+  font: small-caps bold 150% "Lato";  
+}
+
+footer {
   font: small-caps bold 150% "Lato";  
 }
 
@@ -33,23 +33,31 @@ header nav ul li {
 .col, .descrip { background-color: white; text-align: center;}
 
 .span_3_of_11 { 
- outline: 1px solid #579300; 
-}
+ outline: 3px solid #579300; 
+  }
 
  /*  SECTIONS  */
 .section {	padding: 0px; margin: 0px; }
 
 /*  COLUMN SETUP  */
-.col {	display: block;
+.col {	
+    display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%; }
 
 .col:first-child { margin-left: 0; } 
 
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+
 .group { zoom:1; /* For IE 6/7 */ }
 
 /*  GRID OF THREE  */
-.span_3_of_3 { width: 100%; }
+.span_3_of_3 { width: 98%; }
 .span_2_of_3 { width: 66.1%; }
 .span_1_of_3 { width: 32.2%; }
 
@@ -78,37 +86,42 @@ header img {
     height: 150px;   
 }
  
-.main, .mosaic, .descrip {
-  clear: both;
-  margin: 0 auto;
-  text-align: left;
+.main, .descrip {
+  clear: both; 
+  text-align: left; 
+}
+
+.welcome {
+  text-align: center;
 }
 
 article img {  
     max-width: 480px; 
+    padding-left: 5%;
   }
  
 .descrip {
-  font: small-caps 150% "Vollkorn";
+  font: 125% "Ariel"; 
 }
  
 .footer-descrip {
   text-align: center;
   min-width: 98%; 
   font: small-caps 85% "Lato";
-  padding: 2px;
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border-width: 3px;
   border-style: double; 
   border-color: #579300 #60A300;
-  margin-bottom: 25px;
 }
 
 .map {
-  
+  min-width: 36%;
+  min-height: 30%
 }
 
-<<<<<<< HEAD
-  
 =======
 /* monica's new stuff */
 header li {
@@ -168,8 +181,7 @@ padding-top: 2%;
 article {
 text-align: left;
 padding: 2% 20% 5% 5%;
-}
->>>>>>> gh-pages
+} 
 
 .class-list li {
   padding:1% 1% 1% 0;
@@ -207,8 +219,7 @@ h3 {
   float: left;
   margin-right: 3%;
 }
-
-=======
+ 
 .about-article p {
   width: auto;
   font-size: 1.2rem;
@@ -220,8 +231,7 @@ h3 {
   font-size: 2.5rem;
 }
 .about-article {
-  padding-bottom: 3%;
->>>>>>> gh-pages
+  padding-bottom: 3%; 
 } 
 
 
@@ -285,3 +295,21 @@ h3 {
 	opacity: 1;
 	transform: scale(1);
 } 
+
+.span_3_of_11 {
+  max-height; 10rem;
+}
+
+body {
+ max-width: 90%;
+  margin-left: 10%;
+  margin-right: 10%; 
+  background: -prefix-linear-gradient(top, white, #579300); 
+  background: linear-gradient(to bottom, white, #579300); 
+} 
+
+.main {
+background-color:#FFF;
+background-image: url(your_BG.jpg);
+}
+ 
