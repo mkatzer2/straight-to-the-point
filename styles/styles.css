@@ -297,7 +297,7 @@ h3 {
 } 
 
 .span_3_of_11 {
-  max-height; 10rem;
+  min-height: 15rem;
 }
 
 body {
