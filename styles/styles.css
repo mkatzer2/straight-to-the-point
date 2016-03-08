@@ -17,9 +17,6 @@ header {
   font: small-caps bold 150% "Lato";  
 }
 
-footer {
-  font: small-caps bold 150% "Lato";  
-}
 
 header li { 
   float: left;
@@ -99,6 +96,9 @@ header img {
 
 .welcome {
   text-align: center;
+  margin-left: 26%;
+  margin-top: 10%;
+  font-size: 1.7rem;
 }
 
 article img {  
@@ -107,6 +107,13 @@ article img {
  
 .descrip {
   font: 125% "Ariel"; 
+  text-align: center;
+  width: 100%;
+  margin-left: 7%;
+  margin-bottom: 7%;
+  margin-top: 3%;
+  border: 3px solid #523E33;
+  padding: 3%;
 }
  
 .footer-descrip {
@@ -123,9 +130,13 @@ article img {
 }
 
 .map {
-  min-width: 36%;
-  min-height: 30%
+  width:100%;
+  border: 4px solid #523E33;
+  position: relative;
+  right: 10%;
+  margin-top: 30%;
 }
+
 
 header {
   background-color: white;
@@ -243,9 +254,7 @@ h3 {
 	position: relative;
 	/*Instead of height we will use padding*/
 	padding-top: 320px; /*That helps bring the labels down*/
-	
-	margin: 15px auto;
-	
+	margin-left: 14%;
 	/*Lets add a shadow*/
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
@@ -256,6 +265,7 @@ h3 {
 	position: absolute;
 	left: 0; top: 0;
 	transition: all 0.5s;
+    
 }
 
 .slider input[name='slide_switch'] {
@@ -264,9 +274,8 @@ h3 {
 
 .slider label {
 	/*spacing for the thumbnails*/
-	margin: 18px 0 0 18px;
+	margin: 5% 0 5% 8.5%;
 	border: 3px solid #999;
-	
 	float: left;
 	cursor: pointer;
 	transition: all 0.5s;
@@ -316,12 +325,41 @@ background-image: url(your_BG.jpg);
 .social p {
   padding-bottom: 10%;
   padding-top: 15%;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 10%;
+  margin-top: 15%;
 }
 
 .social li {
   display: inline;
+  
+}
+.social img {
+  width: 30%
 }
 
 aside li:hover {
   background-color: rgb(207, 207, 207);
+}
+
+.spaces p {
+  margin: 3% auto;
+  
+}
+
+footer {
+  font: small-caps bold 150% "Lato"; 
+  background-color: white;
+  padding: 0 3%;
+  padding-bottom: 5%;
+  border-top: 5px solid #579300;
+}
+
+.footer-nav {
+  margin-top: 15%;
+}
+
+footer a {
+  color: #523E33;
+  font-family: Oswald, sans-serif;
 }
